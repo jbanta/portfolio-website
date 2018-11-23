@@ -1,0 +1,215 @@
+.bold, #nav-sidebar, #resume-link, #name-hero, #subtitle-hero, #greeting-about, #letstalk, .email {
+  font-weight: 700; }
+
+.semilight, #description-about, #cta-contact {
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("assets/fonts/bahnschrift.ttf"); }
+
+html, body {
+  margin: 0;
+  font-family: "Bahnschrift"; }
+
+.reddot {
+  border: 1px dashed red; }
+
+.margin-container {
+  position: relative;
+  width: 800px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.sidebar {
+  width: 10%;
+  height: 100%;
+  background: #e6e6e6;
+  position: fixed; }
+
+#logo-sidebar {
+  position: relative;
+  width: 80px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer; }
+
+#nav-sidebar {
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+  top: 50px;
+  font-size: 18px; }
+
+.nav-link {
+  margin-bottom: 20px;
+  cursor: pointer; }
+
+#resume-link {
+  position: absolute;
+  color: #006fff;
+  font-size: 16px;
+  text-align: center;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; }
+
+.section {
+  position: relative;
+  left: 10%;
+  background: #1e1e1e;
+  width: 90%;
+  height: 100vh; }
+
+.nav-indicator {
+  width: 10px;
+  height: 30px;
+  background: #1e1e1e;
+  position: relative;
+  float: right;
+  top: 75px; }
+
+.hero-content {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%); }
+
+#logo-hero {
+  position: relative;
+  width: 280px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+#name-hero {
+  position: relative;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 30px; }
+
+#subtitle-hero {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  text-align: center; }
+
+#section-work {
+  background: white; }
+
+.proj {
+  margin-bottom: -5px; }
+
+.proj-banner {
+  width: 100%; }
+
+.proj-title {
+  color: white;
+  position: relative;
+  text-align: center;
+  top: 35%;
+  font-size: 30px; }
+
+.expand-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.expand-overlay:hover {
+  opacity: .85;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.btn-expand {
+  width: 35px;
+  position: absolute;
+  cursor: pointer;
+  left: 49%;
+  bottom: 20px; }
+
+.proj-content {
+  box-shadow: inset 0px 150px 26px -145px rgba(0, 0, 0, 0.3); }
+
+.hideBTN {
+  width: 50px;
+  left: 48%; }
+
+.about-grid {
+  position: relative;
+  top: 37vh;
+  display: grid;
+  grid-template-columns: 200px auto; }
+
+#img-me {
+  position: relative;
+  width: 150px; }
+
+#greeting-about {
+  position: relative;
+  color: white;
+  font-size: 60px;
+  top: 0; }
+
+#description-about {
+  color: white;
+  left: 5px;
+  position: relative;
+  font-size: 14px;
+  line-height: 40px; }
+
+#current-status {
+  color: gray; }
+
+#section-contact {
+  background: #0D0D0D; }
+
+.contact-content {
+  position: relative;
+  top: 20vh; }
+
+#letstalk {
+  color: gray;
+  font-size: 16px;
+  letter-spacing: 10px;
+  margin-bottom: 20px; }
+
+.email {
+  color: white;
+  font-size: 60px;
+  cursor: pointer; }
+
+#cta-contact {
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  line-height: 40px; }
+
+.social {
+  width: 40px;
+  display: inline-block;
+  margin: 150px 15px 0 0;
+  position: relative;
+  transition: all 0.3s; }
+
+.social:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s; }
+
+.copyclipboard {
+  position: relative;
+  font-size: 14px;
+  opacity: 0;
+  color: #4f4f4f;
+  pointer-events: none;
+  top: 10px; }

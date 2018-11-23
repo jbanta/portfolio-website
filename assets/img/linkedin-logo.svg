@@ -1,0 +1,18 @@
+<svg id="linkedin_logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.667 48.667">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #1e1e1e;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_8" data-name="Rectangle 8" class="cls-1" width="48.667" height="48.667" transform="translate(0 0)"/>
+  <g id="linkedin_logo-2" data-name="linkedin logo" transform="translate(12.42 10.89)">
+    <path id="XMLID_195_" class="cls-2" d="M126.69,210.98h4.992v16.052H126.69Zm2.505-7.98a2.895,2.895,0,1,1-2.895,2.895A2.9,2.9,0,0,1,129.195,203" transform="translate(-126.3 -203)"/>
+    <path id="XMLID_192_" class="cls-2" d="M218.1,285.19h4.779v2.2h.065a5.242,5.242,0,0,1,4.723-2.589c5.048,0,5.985,3.322,5.985,7.646v8.8h-4.983v-7.8c0-1.865-.028-4.259-2.589-4.259-2.6,0-2.988,2.032-2.988,4.12v7.943h-4.983L218.1,285.19Z" transform="translate(-209.582 -277.21)"/>
+  </g>
+</svg>
