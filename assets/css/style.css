@@ -1,4 +1,4 @@
-.bold, #nav-sidebar, #resume-link, #name-hero, #subtitle-hero, #greeting-about, #letstalk, .email {
+.bold, #nav-sidebar, #resume-link, #name-hero, #subtitle-hero, .content-subtitle, #greeting-about, #letstalk, .email {
   font-weight: 700; }
 
 .semilight, #description-about, #cta-contact {
@@ -6,7 +6,12 @@
 
 @font-face {
   font-family: "Bahnschrift";
-  src: url("assets/fonts/bahnschrift.ttf"); }
+  src: url("../fonts/bahnschrift.ttf"); }
+
+.img-shadow, .content-img-full {
+  -webkit-box-shadow: 10px 10px 21px -4px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 10px 10px 21px -4px rgba(0, 0, 0, 0.29);
+  box-shadow: 10px 10px 21px -4px rgba(0, 0, 0, 0.29); }
 
 html, body {
   margin: 0;
@@ -71,6 +76,9 @@ html, body {
   float: right;
   top: 75px; }
 
+.text-link {
+  color: #006fff; }
+
 .hero-content {
   position: relative;
   left: 50%;
@@ -109,7 +117,7 @@ html, body {
   color: white;
   position: relative;
   text-align: center;
-  top: 35%;
+  top: 37%;
   font-size: 30px; }
 
 .expand-overlay {
@@ -132,18 +140,65 @@ html, body {
   transition: all 0.3s ease; }
 
 .btn-expand {
-  width: 35px;
+  width: 45px;
   position: absolute;
   cursor: pointer;
-  left: 49%;
+  left: 50%;
   bottom: 20px; }
 
 .proj-content {
   box-shadow: inset 0px 150px 26px -145px rgba(0, 0, 0, 0.3); }
 
+2
 .hideBTN {
-  width: 50px;
-  left: 48%; }
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  bottom: 40px;
+  position: relative;
+  transition: all 0.3s; }
+
+.hideBTN:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s; }
+
+.content-subtitle {
+  font-size: 17px;
+  padding-top: 80px; }
+
+.content-text {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 25px; }
+
+.btn-viewbehance {
+  position: relative;
+  margin: 70px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  cursor: pointer;
+  transition: all .2s; }
+
+.content-img-full {
+  width: 100%;
+  margin: 20px 0; }
+
+.content-img-grid {
+  cursor: pointer;
+  width: 100%;
+  margin: 5px;
+  transition: all .2s; }
+
+.content-img-grid:hover {
+  transform: scale(1.02);
+  transition: all .2s; }
+
+.twocol-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  padding-bottom: 100px; }
 
 .about-grid {
   position: relative;
@@ -153,7 +208,7 @@ html, body {
 
 #img-me {
   position: relative;
-  width: 150px; }
+  width: 160px; }
 
 #greeting-about {
   position: relative;
@@ -165,7 +220,7 @@ html, body {
   color: white;
   left: 5px;
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 40px; }
 
 #current-status {
@@ -176,7 +231,7 @@ html, body {
 
 .contact-content {
   position: relative;
-  top: 20vh; }
+  top: 23vh; }
 
 #letstalk {
   color: gray;
@@ -192,7 +247,7 @@ html, body {
 #cta-contact {
   margin-top: 20px;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 40px; }
 
 .social {
