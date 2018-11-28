@@ -6,7 +6,11 @@
 
 @font-face {
   font-family: "Bahnschrift";
-  src: url("../fonts/bahnschrift.ttf"); }
+  src: url("../fonts/Bahnschrift.ttf");
+  src: url("../fonts/Bahnschrift.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Bahnschrift.eot?#iefix") format("embedded-opentype");
+  /* IE6-IE8 */ }
 
 .img-shadow, .content-img-full {
   -webkit-box-shadow: 10px 10px 21px -4px rgba(0, 0, 0, 0.29);
