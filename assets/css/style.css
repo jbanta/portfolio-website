@@ -254,7 +254,8 @@ html, body {
   margin-top: 20px;
   color: white;
   font-size: 16px;
-  line-height: 40px; }
+  line-height: 40px;
+  width: 80%; }
 
 .social {
   width: 40px;
@@ -358,3 +359,18 @@ html, body {
 
   .about-grid {
     top: 130px; } }
+@media (max-width: 560px) {
+  .margin-container-work {
+    width: 85%; }
+
+  .margin-container {
+    width: 70%; }
+
+  #img-me {
+    width: 70px; }
+
+  .about-grid {
+    grid-template-columns: 100px auto; }
+
+  .email {
+    font-size: 25px; } }
