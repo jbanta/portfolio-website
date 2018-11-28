@@ -129,7 +129,7 @@ html, body {
 .expand-overlay {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 30.1vh;
   background: black;
   opacity: 0;
   cursor: pointer;
@@ -341,7 +341,10 @@ html, body {
     width: 100%; }
 
   .btn-expand {
-    bottom: 10px; } }
+    bottom: 10px; }
+
+  .expand-overlay {
+    height: 18.8vh; } }
 @media (max-width: 780px) {
   .margin-container-work {
     width: 600px; } }
