@@ -18,7 +18,6 @@ if (window.innerWidth > 767) {
         $(".copyclipboard").css("display", "none");
         $(".copyclipboard").fadeIn(100);
     });
-} else if (window.innerWidth <= 767) {
-    $(".email").html("<a href='mailto:johannbanta@gmail.com'>johannbanta@gmail.com</a>");
-    $(".email").css("font-size", "20px");
+} else if (window.innerWidth <=820) {
+    $(".email").html("<a href='mailto:johannbanta@gmail.com' class='text-link'>johannbanta@gmail.com</a> ");
 }

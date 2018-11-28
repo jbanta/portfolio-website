@@ -89,7 +89,7 @@ html, body {
 }
 
 .nav-indicator {
-  width: 10px;
+  width: 5px;
   height: 30px;
   background: $charcoal;
   position: relative;
@@ -135,6 +135,12 @@ html, body {
 #section-work {
   background: white;
 }
+.margin-container-work {
+  position: relative;
+  width: 800px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .proj {
   margin-bottom: -5px;
@@ -177,7 +183,7 @@ html, body {
   width: 45px;
   position: absolute;
   cursor: pointer;
-  left: 50%;
+  left: 49%;
   bottom: 20px;
 }
 
@@ -252,7 +258,7 @@ html, body {
 //ABOUT SECTION
 .about-grid {
   position: relative;
-  top: 37vh;
+  top: 300px;
   display: grid;
   grid-template-columns: 200px auto
 }
@@ -339,4 +345,114 @@ html, body {
     pointer-events:none;
     top: 10px
 
+}
+
+//MEDIA QUERIES
+
+//MD1
+@media (max-width: 1080px){
+  #nav-sidebar {
+    font-size: 14px;
+  }
+  #logo-sidebar {
+    width: 60px;
+  }
+  .nav-indicator {
+    display: none;
+  }
+  #resume-link {
+    font-size: 12px;
+  }
+  .proj-title {
+    font-size: 25px;
+  }
+  .margin-container {
+    width: 600px;
+  }
+  .content-text {
+    font-size: 14px;
+  }
+  .about-grid {
+    top: 200px;
+  }
+  #img-me {
+    width: 140px;
+  }
+  #description-about {
+    font-size: 14px;
+  }
+  #cta-contact {
+    font-size: 14px;
+  }
+  #letstalk {
+    font-size: 14px;
+  }
+  .email {
+    font-size: 50px;
+  }
+}
+
+
+//MD2
+@media (max-width: 1000px){
+  .margin-container-work {
+    width: 700px;
+  }
+  .proj-title {
+    font-size: 20px;
+  }
+  .btn-expand {
+    width: 35px;
+    left: 48.5%;
+  }
+}
+
+//MD3
+@media (max-width: 820px){
+  .sidebar {
+    display: none;
+  }
+  .section {
+    left: 0;
+    width: 100%;
+  }
+  .btn-expand {
+    bottom: 10px;
+  }
+}
+
+//MD4
+@media (max-width: 780px){
+  .margin-container-work {
+    width: 600px;
+  }
+}
+
+//MD5
+@media (max-width: 700px){
+  .margin-container {
+    width: 500px;
+  }
+  .email {
+    font-size: 40px;
+  }
+}
+
+//MD6
+@media (max-width: 670px){
+  #name-hero {
+    font-size: 50px;
+  }
+  #logo-hero {
+    width: 200px;
+  }
+  .margin-container-work {
+    width: 500px;
+  }
+  .margin-container {
+    width: 450px;
+  }
+  .about-grid {
+    top: 130px;
+  }
 }
