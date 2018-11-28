@@ -1,4 +1,4 @@
-if (window.innerWidth > 767) {
+if (window.innerWidth > 820) {
     $(".email").hover(function(){
         $(".copyclipboard").html("COPY TO CLIPBOARD");
         $(".copyclipboard").animate({opacity: "1"}, 100);
@@ -18,6 +18,6 @@ if (window.innerWidth > 767) {
         $(".copyclipboard").css("display", "none");
         $(".copyclipboard").fadeIn(100);
     });
-} else if (window.innerWidth <=820) {
+} else if (window.innerWidth <= 820) {
     $(".email").html("<a href='mailto:johannbanta@gmail.com' class='text-link'>johannbanta@gmail.com</a> ");
 }

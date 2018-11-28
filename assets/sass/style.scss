@@ -269,7 +269,7 @@ html, body {
 //ABOUT SECTION
 .about-grid {
   position: relative;
-  top: 300px;
+  top: 37vh;
   display: grid;
   grid-template-columns: 200px auto
 }
@@ -387,7 +387,7 @@ html, body {
     font-size: 14px;
   }
   .about-grid {
-    top: 200px;
+    top: 30vh;
   }
   #img-me {
     width: 140px;
@@ -467,7 +467,7 @@ html, body {
     width: 450px;
   }
   .about-grid {
-    top: 130px;
+    top: 23vh;
   }
   .twocol-grid {
     grid-template-columns: 1fr;
