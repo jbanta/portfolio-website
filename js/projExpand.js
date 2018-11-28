@@ -6,7 +6,7 @@ var tophidebtn;
 
 // setTimeout(
 //   function() {
-//     if (window.innerWidth <=820) {
+    if (window.innerWidth <=820) {
       $(".expand-overlay").css({'height':($(".proj-banner").height()*1.72 +'px')});
     } else {
       $(".expand-overlay").css({'height':($(".proj-banner").height() +'px')});
