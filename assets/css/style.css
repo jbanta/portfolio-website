@@ -177,6 +177,12 @@ html, body {
   font-size: 16px;
   line-height: 25px; }
 
+.y3di-graphics {
+  height: 300px;
+  position: relative;
+  top: 70px;
+  left: 70px; }
+
 .btn-viewbehance {
   position: relative;
   margin: 70px 0;
@@ -358,7 +364,14 @@ html, body {
     width: 450px; }
 
   .about-grid {
-    top: 130px; } }
+    top: 130px; }
+
+  .twocol-grid {
+    grid-template-columns: 1fr; }
+
+  .y3di-graphics {
+    left: 50%;
+    transform: translateX(-50%); } }
 @media (max-width: 560px) {
   .margin-container-work {
     width: 85%; }

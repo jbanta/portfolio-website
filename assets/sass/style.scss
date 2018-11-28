@@ -217,6 +217,14 @@ html, body {
   line-height: 25px;
 }
 
+.y3di-graphics {
+  height: 300px;
+  position: relative;
+  top: 70px;
+  left: 70px;
+}
+
+
 .btn-viewbehance {
   position: relative;
   margin: 70px 0;
@@ -455,6 +463,13 @@ html, body {
   }
   .about-grid {
     top: 130px;
+  }
+  .twocol-grid {
+    grid-template-columns: 1fr;
+  }
+  .y3di-graphics {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
