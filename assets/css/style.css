@@ -1,4 +1,4 @@
-.bold, #nav-sidebar, #resume-link, #name-hero, #subtitle-hero, .content-subtitle, #greeting-about, #letstalk, .email, .copyclipboard {
+.bold, #nav-sidebar, #resume-link, #name-hero, #subtitle-hero, .content-subtitle, #greeting-about, #letstalk, .email, #contact-seeresume, .copyclipboard {
   font-weight: 700; }
 
 .semilight, #description-about, #cta-contact {
@@ -264,6 +264,12 @@ html, body {
   width: 80%;
   max-width: 430px; }
 
+#contact-seeresume {
+  margin-top: 40px;
+  color: #006fff;
+  font-size: 16px;
+  display: none; }
+
 .social {
   width: 40px;
   display: inline-block;
@@ -344,7 +350,10 @@ html, body {
     bottom: 10px; }
 
   .expand-overlay {
-    height: 18.8vh; } }
+    height: 18.8vh; }
+
+  #contact-seeresume {
+    display: block; } }
 @media (max-width: 780px) {
   .margin-container-work {
     width: 600px; } }

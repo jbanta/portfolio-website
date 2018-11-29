@@ -8,7 +8,8 @@ var tophidebtn;
 //   function() {
     if (window.innerWidth <=820) {
       $(".expand-overlay").css({'height':($(".proj-banner").height()*1.72 +'px')});
-    } else {
+    }
+    else {
       $(".expand-overlay").css({'height':($(".proj-banner").height() +'px')});
     }
   // }, 3000);

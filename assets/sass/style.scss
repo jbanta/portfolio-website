@@ -334,6 +334,14 @@ html, body {
   max-width: 430px;
 }
 
+#contact-seeresume {
+  @extend .bold;
+  margin-top: 40px;
+  color: $link;
+  font-size: 16px;
+  display: none;
+}
+
 .social {
   width: 40px;
   display: inline-block;
@@ -432,6 +440,9 @@ html, body {
   }
   .expand-overlay {
     height: 18.8vh;
+  }
+  #contact-seeresume {
+    display: block;
   }
 }
 
