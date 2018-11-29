@@ -336,10 +336,9 @@ html, body {
 
 #contact-seeresume {
   @extend .bold;
-  margin-top: 40px;
   color: $link;
   font-size: 16px;
-  display: none;
+  opacity: 0;
 }
 
 .social {
@@ -442,7 +441,11 @@ html, body {
     height: 18.8vh;
   }
   #contact-seeresume {
-    display: block;
+    margin-top: 40px;
+    opacity: 1;
+  }
+  .social {
+    margin: 130px 15px 0 0;
   }
 }
 

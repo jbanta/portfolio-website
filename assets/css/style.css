@@ -265,10 +265,9 @@ html, body {
   max-width: 430px; }
 
 #contact-seeresume {
-  margin-top: 40px;
   color: #006fff;
   font-size: 16px;
-  display: none; }
+  opacity: 0; }
 
 .social {
   width: 40px;
@@ -353,7 +352,11 @@ html, body {
     height: 18.8vh; }
 
   #contact-seeresume {
-    display: block; } }
+    margin-top: 40px;
+    opacity: 1; }
+
+  .social {
+    margin: 130px 15px 0 0; } }
 @media (max-width: 780px) {
   .margin-container-work {
     width: 600px; } }
