@@ -24,6 +24,15 @@ $( ".expand-overlay").click(function() {
 
 });
 
+$( ".proj-banner").hover(function() {
+  if (window.innerWidth <=820) {
+    $(".expand-overlay").css({'height':($(".proj-banner").height()*1.72 +'px')});
+  }
+  else {
+    $(".expand-overlay").css({'height':($(".proj-banner").height() +'px')});
+  }
+});
+
 $( ".hideBTN").click(function() {
   curproj = "#proj-" + $( this ).attr('id');
   curbtn = "#btn-" + $( this ).attr('id');
