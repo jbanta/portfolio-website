@@ -1,4 +1,4 @@
-.bold, #nav-sidebar, #resume-link, #name-hero, #subtitle-hero, .content-subtitle, #greeting-about, #letstalk, .email, #contact-seeresume, .copyclipboard {
+.bold, #nav-sidebar, #resume-link, #name-hero, #subtitle-hero, .proj-title, #greeting-about, #letstalk, .email, #contact-seeresume, .copyclipboard {
   font-weight: 700; }
 
 .semilight, #description-about, #cta-contact {
@@ -8,7 +8,7 @@
   font-family: "Bahnschrift";
   src: url("../fonts/bahnschrift.ttf"); }
 
-.img-shadow, .content-img-full {
+.img-shadow {
   -webkit-box-shadow: 10px 10px 21px -4px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 10px 10px 21px -4px rgba(0, 0, 0, 0.29);
   box-shadow: 10px 10px 21px -4px rgba(0, 0, 0, 0.29); }
@@ -27,7 +27,7 @@ html, body {
   transform: translateX(-50%); }
 
 .sidebar {
-  width: 10%;
+  width: 20%;
   height: 100%;
   background: #e6e6e6;
   position: fixed; }
@@ -35,20 +35,20 @@ html, body {
 #logo-sidebar {
   position: relative;
   width: 80px;
-  top: 40px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer; }
 
 #nav-sidebar {
-  margin-top: 20px;
+  margin-top: 70px;
   position: relative;
   text-align: center;
   top: 50px;
   font-size: 18px; }
 
 .nav-link {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   cursor: pointer; }
 
 #resume-link {
@@ -63,9 +63,9 @@ html, body {
 
 .section {
   position: relative;
-  left: 10%;
+  left: 20%;
   background: #1e1e1e;
-  width: 90%;
+  width: 80%;
   height: 100vh; }
 
 .nav-indicator {
@@ -107,94 +107,69 @@ html, body {
 #section-work {
   background: white; }
 
-.margin-container-work {
-  position: relative;
-  width: 800px;
-  left: 50%;
-  transform: translateX(-50%); }
-
 .proj {
-  margin-bottom: -5px; }
+  height: 450px;
+  background-size: contain;
+  overflow: hidden; }
 
-.proj-banner {
-  width: 100%; }
+.rel-container {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border: 1px solid rgba(0, 0, 0, 0); }
+
+.proj-txt {
+  position: relative;
+  margin: 70px 0 0 70px;
+  width: 50%; }
 
 .proj-title {
+  font-size: 60px;
+  letter-spacing: 3px; }
+
+.proj-desc {
+  font-size: 15px;
+  line-height: 25px;
+  width: 60%;
+  margin-left: 3px; }
+
+.proj-cta {
+  display: inline-block;
+  position: absolute;
+  background-color: #006fff;
   color: white;
-  position: relative;
-  text-align: center;
-  top: 37%;
-  font-size: 30px; }
+  margin-left: 70px;
+  bottom: 70px;
+  padding: 13px 20px 12px 20px;
+  border-radius: 25px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  transition: all .3s; }
 
-.expand-overlay {
-  position: absolute;
-  width: 100%;
-  height: 30.1vh;
-  background: black;
-  opacity: 0;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-.expand-overlay:hover {
-  opacity: .85;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
-.btn-expand {
-  width: 45px;
-  position: absolute;
-  cursor: pointer;
-  left: 49%;
-  bottom: 20px; }
-
-.proj-content {
-  box-shadow: inset 0px 150px 26px -145px rgba(0, 0, 0, 0.3); }
-
-2
-.hideBTN {
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0 auto;
-  bottom: 40px;
-  position: relative;
-  transition: all 0.3s; }
-
-.hideBTN:hover {
+.proj-cta:hover {
   transform: translateY(-5px);
-  transition: all 0.3s; }
+  transition: all .3s; }
 
-.content-subtitle {
-  font-size: 17px;
-  padding-top: 80px; }
+#y3di-banner-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  max-width: 900px; }
 
-.content-text {
-  padding-top: 10px;
-  font-size: 16px;
-  line-height: 25px; }
+#dfam-banner-img {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%; }
 
-.y3di-graphics {
-  height: 300px;
-  position: relative;
-  top: 70px;
-  left: 70px; }
-
-.btn-viewbehance {
-  position: relative;
-  margin: 70px 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  cursor: pointer;
-  transition: all .2s; }
-
-.content-img-full {
-  width: 100%;
-  margin: 20px 0; }
+#uicol-banner-img {
+  position: absolute;
+  right: 55px;
+  top: 53%;
+  transform: translateY(-50%);
+  width: 50%; }
 
 .content-img-grid {
   cursor: pointer;
@@ -288,6 +263,14 @@ html, body {
   pointer-events: none;
   top: 10px; }
 
+@media (max-width: 1360px) {
+  #uicol-banner-img {
+    width: 42%;
+    right: 30px; }
+
+  #dfam-banner-img {
+    width: 42%;
+    right: 50px; } }
 @media (max-width: 1080px) {
   #nav-sidebar {
     font-size: 14px; }
@@ -301,14 +284,42 @@ html, body {
   #resume-link {
     font-size: 12px; }
 
-  .proj-title {
-    font-size: 25px; }
+  .proj {
+    height: 750px; }
+
+  .rel-container {
+    height: 750px; }
+
+  .proj-txt {
+    width: 70%; }
+
+  .proj-desc {
+    width: 100%;
+    margin-top: 10px; }
+
+  .proj-cta {
+    position: relative;
+    margin: 100px 0 10px 70px; }
+
+  #uicol-banner-img {
+    max-width: 600px;
+    width: 80%;
+    right: auto;
+    left: 70px;
+    top: 550px; }
+
+  #dfam-banner-img {
+    max-width: 600px;
+    width: 80%;
+    right: auto;
+    left: 60px;
+    top: 530px; }
+
+  #y3di-banner-img {
+    width: 100%; }
 
   .margin-container {
     width: 600px; }
-
-  .content-text {
-    font-size: 14px; }
 
   .about-grid {
     top: 30vh; }
@@ -328,12 +339,6 @@ html, body {
   .email {
     font-size: 50px; } }
 @media (max-width: 1000px) {
-  .margin-container-work {
-    width: 700px; }
-
-  .proj-title {
-    font-size: 20px; }
-
   .btn-expand {
     width: 35px;
     left: 48.5%; } }
@@ -345,21 +350,12 @@ html, body {
     left: 0;
     width: 100%; }
 
-  .btn-expand {
-    bottom: 10px; }
-
-  .expand-overlay {
-    height: 18.8vh; }
-
   #contact-seeresume {
     margin-top: 40px;
     opacity: 1; }
 
   .social {
     margin: 130px 15px 0 0; } }
-@media (max-width: 780px) {
-  .margin-container-work {
-    width: 600px; } }
 @media (max-width: 700px) {
   .margin-container {
     width: 500px; }
@@ -372,9 +368,6 @@ html, body {
 
   #logo-hero {
     width: 200px; }
-
-  .margin-container-work {
-    width: 500px; }
 
   .margin-container {
     width: 450px; }
@@ -389,6 +382,30 @@ html, body {
     left: 50%;
     transform: translateX(-50%); } }
 @media (max-width: 560px) {
+  .proj {
+    height: 700px; }
+
+  .rel-container {
+    height: 700px; }
+
+  .proj-txt {
+    margin-left: 50px; }
+
+  .proj-title {
+    font-size: 10vw; }
+
+  .proj-cta {
+    margin-left: 50px; }
+
+  #uicol-banner-img {
+    left: 50px; }
+
+  #dfam-banner-img {
+    left: 40px; }
+
+  #y3di-banner-img {
+    width: 100%; }
+
   .margin-container-work {
     width: 85%; }
 
