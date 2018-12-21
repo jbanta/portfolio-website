@@ -27,6 +27,11 @@ html, body {
 
 }
 
+a {
+  color: $link;
+  text-decoration: none;
+}
+
 .reddot {
   border: 1px dashed red;
 }
@@ -68,6 +73,7 @@ html, body {
 .nav-link {
   margin-bottom: 40px;
   cursor: pointer;
+  color: $charcoal;
 }
 #resume-link {
   position: absolute;
@@ -87,6 +93,13 @@ html, body {
   width: 80%;
   height: 100vh;
 }
+.cs-section {
+  position: relative;
+  left: 20%;
+  background: $charcoal;
+  width: 80%;
+  height: auto;
+}
 
 .nav-indicator {
   width: 5px;
@@ -96,6 +109,15 @@ html, body {
   float: right;
   top: 75px;
 }
+.nav-indicator-workfixed {
+  width: 5px;
+  height: 30px;
+  background: $charcoal;
+  position: relative;
+  float: right;
+  top: 200px;
+}
+
 
 .text-link {
   color: $link;
@@ -135,12 +157,6 @@ html, body {
 #section-work {
   background: white;
 }
-// .margin-container-work {
-//   position: relative;
-//   width: 800px;
-//   left: 50%;
-//   transform: translateX(-50%);
-// }
 
 .proj {
   height: 450px;
@@ -219,23 +235,10 @@ html, body {
   max-width: 650px;
 }
 
-.content-img-grid {
-  cursor: pointer;
-  width: 100%;
-  margin: 5px;
-  transition: all .2s;
-}
-
-.content-img-grid:hover {
-  transform: scale(1.02);
-  transition: all .2s;
-}
-
 .twocol-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   column-gap: 10px;
-  padding-bottom: 100px;
 }
 
 
@@ -341,6 +344,70 @@ html, body {
 
 }
 
+//CASE STUDIES
+.cs-title {
+  text-align: center;
+  font-size: 72px;
+  @extend .bold;
+  letter-spacing: 8px;
+}
+.cs-subtitle {
+  text-align: center;
+  font-size: 35px;
+  @extend .bold;
+}
+.cs-casestudy {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 15px;
+  @extend .bold;
+  margin-top: 40px;
+}
+.cs-cat-title {
+  font-size: 14px;
+  letter-spacing: 3px;
+  @extend .bold;
+}
+.cs-sect-title {
+  position: relative;
+  font-size: 35px;
+  @extend .bold;
+  line-height: 50px;
+  margin-top: 7px;
+  left: -2px;
+}
+.cs-mini-title {
+  position: relative;
+  font-size: 20px;
+  @extend .bold;
+  margin-top: 7px;
+  left: -1px;
+}
+.cs-body-txt {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 30px;
+  width: 95%;
+}
+.cs-margin-container {
+  position: relative;
+  width: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 80px 0 80px 0;
+}
+.cs-full-img {
+  width: 100%;
+  margin: 20px 0;
+}
+.cs-center-img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
 //MEDIA QUERIES
 
 // MD1
@@ -364,6 +431,9 @@ html, body {
     width: 60px;
   }
   .nav-indicator {
+    display: none;
+  }
+  .nav-indicator-workfixed {
     display: none;
   }
   #resume-link {
@@ -445,6 +515,10 @@ html, body {
     left: 0;
     width: 100%;
   }
+  .cs-section {
+    left: 0;
+    width: 100%;
+  }
 
   #contact-seeresume {
     margin-top: 40px;
@@ -486,6 +560,12 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
   }
+  #y3di-about-logo {
+    margin-top: 40px;
+  }
+  .col2 {
+    margin-top: 40px;
+  }
 }
 
 //MD7
@@ -515,9 +595,6 @@ html, body {
   }
   #y3di-banner-img {
     width: 100%;
-  }
-  .margin-container-work {
-    width: 85%;
   }
   .margin-container {
     width: 70%;
