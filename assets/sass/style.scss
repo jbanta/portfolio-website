@@ -347,9 +347,10 @@ a {
 //CASE STUDIES
 .cs-title {
   text-align: center;
-  font-size: 72px;
+  font-size: 80px;
   @extend .bold;
   letter-spacing: 8px;
+  margin-top: 10px;
 }
 .cs-subtitle {
   text-align: center;
@@ -358,10 +359,15 @@ a {
 }
 .cs-casestudy {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 15px;
   @extend .bold;
-  margin-top: 40px;
+  margin-top: 60px;
+}
+.cs-date{
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
 }
 .cs-cat-title {
   font-size: 14px;
@@ -405,7 +411,70 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
+.dfam-vishier-steps {
+  @extend .bold;
+  font-size: 18px;
+}
+.cs-img-desc {
+  opacity:.5;
+  text-align:center;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 30px;
+}
+.uicol-item {
+  position: relative;
+  margin-bottom: 30px;
 
+}
+.uicol-thumbnail {
+  width: 100%;
+  margin-bottom: 5px;
+  transition: all .2s;
+  cursor: pointer;
+  @extend .img-shadow;
+}
+.uicol-thumbnail:hover {
+  transform: scale(1.015);
+  transition: all .2s;
+}
+.uicol-item-title {
+  @extend .cs-cat-title;
+  color: #494949;
+  position: relative;
+  left: 2px;
+}
+.uicol-overlay-container {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .95);
+  color: #FFFFFF;
+  display: none;
+}
+.uicol-overlay-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+.uicol-close-x {
+  position: absolute;
+  right: 80px;
+  top: 40px;
+  width: 20px;
+  cursor: pointer;
+}
+.uicol-date {
+  color:#6B6B6B;
+  float: right;
+  font-size: 14px;
+  position: relative;
+  top: 30px;
+}
 
 
 //MEDIA QUERIES
@@ -565,6 +634,15 @@ a {
   }
   .col2 {
     margin-top: 40px;
+  }
+  .uicol-close-x {
+    right: 40px;
+  }
+  .uicol-date {
+    color:#6B6B6B;
+    float:none;
+    font-size: 14px;
+    top:0;
   }
 }
 
