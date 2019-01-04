@@ -14,6 +14,9 @@ $(window).load(function() {
 
   //Opens Overlay if specific item was linked
   var itemNum = window.location.hash.substring(1).split('-')[0];
-  $('#overlay-' + itemNum).fadeIn();
-  $('body').css("overflow", "hidden");
+  if (itemNum) {
+    $('#overlay-' + itemNum).fadeIn();
+    $('body').css("overflow", "hidden");
+  }
+
 });

@@ -42,7 +42,9 @@
         <img src="assets/img/logowhite.svg" alt="" id="logo-hero">
         <div id="name-hero" class="">JOHANN BANTA</div>
         <div id="subtitle-hero" class="">UI / UX Design</div>
+
       </div>
+      <img src="assets/img/scroll-arrow.png" alt="" id="scroll-arrow">
     </div>
 
 
@@ -102,26 +104,35 @@
     </div>
 
     <!-- ABOUT SECTION -->
-    <a name="about"><div class="section" id="section-about"></a>
-      <div class="margin-container">
-        <div class="about-grid ">
-          <div class=""> <img src="assets/img/me.png" alt="" id="img-me" class=""> </div>
+    <a name="about"><div class="section" id="section-about" style="height: auto;"></a>
+      <div class="margin-container" style="padding: 100px 0;">
+        <div class="about-grid">
+          <img src="assets/img/me.png" alt="" id="img-me" class="">
           <div class="">
             <div id="greeting-about" class="">Hello!</div>
-            <div id="description-about">
+            <div class="description-about">
               I am a UI/UX designer familiarized with front-end development who is constantly exploring ways to hone my skills and apply them to real-world applications.
-              <br>
-              <br>
-              <span id="current-status">Currently a UI/UX Design intern at You3Dit and finishing school at UC Berkeley</span>
             </div>
           </div>
         </div>
+        <div class="description-about" style="margin-top: 40px;">
+          With a fiery passion to learn and create, I found UI/UX Design to be my obsession where I have strong motivation to master the tools I have at hand and stay up-to-date with current design trends. I am excited to graduate and kickstart my career in design.
+        </div>
+        <div style="color: gray; margin-top: 40px;">Currently a UI/UX Design intern at You3Dit and finishing school at UC Berkeley</div>
+        <div class="about-img-grid">
+          <img src="assets/img/about0.png" alt="" class="about-img about-img-outline" id="about-img-0">
+          <img src="assets/img/about1.png" alt="" class="about-img about-img-outline" id="about-img-1">
+          <img src="assets/img/about2.png" alt="" class="about-img about-img-outline" id="about-img-2">
+          <img src="assets/img/about3.png" alt="" class="about-img about-img-outline" id="about-img-3">
+          <img src="assets/img/about4.png" alt="" class="about-img about-img-outline" id="about-img-4">
+        </div>
+        <div id="about-img-desc" style=""></div>
       </div>
     </div>
 
     <!-- CONTACT SECTION -->
-    <a name="contact"><div class="section" id="section-contact"></a>
-      <div class="margin-container">
+    <a name="contact"><div class="section" id="section-contact" style="height: auto"></a>
+      <div class="margin-container"  style="padding: 100px 0;">
         <div class="contact-content">
           <div id="letstalk">LET'S TALK</div>
           <div class="email">johannbanta@gmail.com</div>
@@ -129,9 +140,10 @@
           <div id="cta-contact">If you have any opportunities, inquiries, or just want to chat, feel free to contact me.</div>
           <a href="assets/docs/JohannBantaResume.pdf" target="_blank" style="text-decoration: none;"><div id="contact-seeresume">SEE RESUME</div></a>
 
-          <a href="https://www.behance.net/johannbantd130" target="_blank"><img src="assets/img/behance-logo.svg" alt="" class="social"></a>
+          <!-- <a href="https://www.behance.net/johannbantd130" target="_blank"><img src="assets/img/behance-logo.svg" alt="" class="social"></a> -->
           <a href="https://www.linkedin.com/in/johannbanta/" target="_blank"><img src="assets/img/linkedin-logo.svg" alt="" class="social"></a>
           <input type="text" value="johannbanta@gmail.com" id="emailtxt" style="opacity:0; cursor:default;">
+          <div style="color: gray; margin-top: 40px; font-size: 14px;">This website was made from scratch by me</div>
         </div>
       </div>
     </div>
@@ -152,6 +164,9 @@
 
     <!-- Copies email to clipboard on click -->
     <script src="js/copyToClipboard.js" type="text/javascript"></script>
+
+    <!-- about image description loop -->
+    <script src="js/aboutImgDesc.js" type="text/javascript"></script>
 
 
 </body>
