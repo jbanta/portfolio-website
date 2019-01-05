@@ -311,10 +311,10 @@ a {
   transition: all .3s;
   margin-bottom: 5px;
 }
-.about-img:hover {
-  border: solid 2px rgba(255,255,255,1) !important;
-  transition: all .3s;
-}
+// .about-img:hover {
+//   border: solid 2px rgba(255,255,255,1) !important;
+//   transition: all .3s;
+// }
 
 #about-img-desc {
   color: gray;
@@ -394,6 +394,14 @@ a {
     top: 10px;
     @extend .bold;
 
+}
+#copyright {
+  position:relative;
+  color: gray;
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+  top:-20px;
 }
 
 //CASE STUDIES
@@ -701,6 +709,13 @@ a {
     float:none;
     font-size: 14px;
     top:0;
+  }
+  .cs-title {
+    font-size: 13vw;
+  }
+  .cs-subtitle {
+    font-size: 6vw;
+    margin-top: 20px;
   }
 }
 

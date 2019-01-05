@@ -258,10 +258,6 @@ a {
   transition: all .3s;
   margin-bottom: 5px; }
 
-.about-img:hover {
-  border: solid 2px white !important;
-  transition: all .3s; }
-
 #about-img-desc {
   color: gray;
   margin-top: 40px;
@@ -321,6 +317,14 @@ a {
   color: gray;
   pointer-events: none;
   top: 10px; }
+
+#copyright {
+  position: relative;
+  color: gray;
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+  top: -20px; }
 
 .cs-title {
   text-align: center;
@@ -581,7 +585,14 @@ a {
     color: #6B6B6B;
     float: none;
     font-size: 14px;
-    top: 0; } }
+    top: 0; }
+
+  .cs-title {
+    font-size: 13vw; }
+
+  .cs-subtitle {
+    font-size: 6vw;
+    margin-top: 20px; } }
 @media (max-width: 560px) {
   .proj {
     height: 650px; }
