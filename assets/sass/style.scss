@@ -8,10 +8,15 @@ $sidebarwidth: 207px;
 
 .bold { font-weight: 700; }
 .semilight { font-weight: 300;}
+.light { font-weight: 100;}
 
 @font-face {
     font-family: "Bahnschrift";
     src: url('../fonts/bahnschrift.ttf');
+}
+@font-face {
+    font-family: "Shorelines";
+    src: url('../fonts/ShorelinesDisplay.ttf');
 }
 .img-shadow {
   -webkit-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.29);
@@ -32,13 +37,18 @@ a {
   text-decoration: none;
 }
 
+.shorelinesFont {
+  font-family: "Shorelines", shorelines, Shorelines;
+  font-weight: 300;
+}
+
 .reddot {
   border: 1px dashed red;
 }
 
 .margin-container {
   position: relative;
-  width: 80%;
+  width: 75%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -49,7 +59,7 @@ a {
 .sidebar {
   width: 20%;
   height: 100%;
-  background: $lightgray;
+  background: #262626;
   position: fixed;
 }
 
@@ -68,12 +78,13 @@ a {
   text-align: center;
   top: 50px;
   font-size: 18px;
-  @extend .bold;
+
 }
 .nav-link {
   margin-bottom: 40px;
   cursor: pointer;
-  color: $charcoal;
+  color: $lightgray;
+  @extend .light;
 }
 #resume-link {
   position: absolute;
@@ -103,8 +114,8 @@ a {
 
 .nav-indicator {
   width: 5px;
-  height: 30px;
-  background: $charcoal;
+  height: 20px;
+  background: $link;
   position: relative;
   float: right;
   top: 75px;
@@ -127,8 +138,8 @@ a {
 .hero-content {
   position: relative;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -60%);
+  transform: translateX(-50%);
+  padding: 150px 0 200px 0
 }
  #logo-hero {
    position: relative;
@@ -216,6 +227,7 @@ a {
   line-height: 25px;
   width: 60%;
   margin-left:3px;
+  opacity: .8;
 }
 
 .proj-cta {
@@ -274,21 +286,23 @@ a {
 .about-grid {
   position: relative;
   display: grid;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 180px auto;
+  left: 54%;
+  transform: translateX(-50%);
 }
 
 #img-me {
   position: relative;
-  width: 160px;
+  width: 130px;
 
 }
 
 #greeting-about {
   position: relative;
   color: white;
-  font-size: 60px;
+  font-size: 55px;
   @extend .bold;
-  top: 0;
+  top: -15px;
 }
 
 .description-about {
@@ -296,15 +310,16 @@ a {
   left: 5px;
   position: relative;
   font-size: 16px;
-  line-height: 40px;
-  @extend .semilight;
+  line-height: 30px;
+  @extend .light;
+  width: 80%;
 }
 .about-img-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 100%;
   column-gap: 10px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .about-img {
   width: 100%;
@@ -342,10 +357,10 @@ a {
 
 #letstalk {
   color: gray;
-  font-size: 16px;
-  @extend .bold;
+  font-size: 30px;
   letter-spacing: 10px;
   margin-bottom: 20px;
+  font-family: "Shorelines";
 }
 
 .email {
@@ -359,7 +374,7 @@ a {
   margin-top: 20px;
   color: white;
   font-size: 16px;
-  line-height: 40px;
+  line-height: 30px;
   @extend .semilight;
   width: 80%;
   max-width: 430px;
@@ -606,12 +621,6 @@ a {
   .margin-container {
     width: 600px;
   }
-  // .about-grid {
-  //   top: 30vh;
-  // }
-  #img-me {
-    width: 140px;
-  }
   #description-about {
     font-size: 14px;
   }
@@ -717,6 +726,15 @@ a {
     font-size: 6vw;
     margin-top: 20px;
   }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  #img-me {
+    margin-bottom: 40px;
+  }
+  .hero-content {
+    padding: 40px 0 100px 0
+  }
 }
 
 //MD7
@@ -750,13 +768,8 @@ a {
   .margin-container {
     width: 70%;
   }
-  #img-me {
-    width: 100px;
-    margin-bottom: 40px;
-  }
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
+
+
   .about-img-grid {
     grid-template-columns: 1fr 1fr;
   }

@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130559393-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130559393-1');
+    </script>
+
     <title>Johann Banta - UI/UX Designer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-    <meta name="description" content="I am a UI/UX designer familiarized with front-end development who is constantly exploring ways to hone my skills and apply them to real-world applications.
-    ">
-    <meta name="keywords" content="design, product design, user interface design, ui design, user experience design, ux design, branding design, design portfolio, ui design portfoio, johann banta, html, css, javascript, adobe, photoshop, illustrator, adobe xd">
+    <meta name="description" content="I am a creative  U/UX Designer with a strong front-end prototyping background who is constantly exploring ways to hone and apply my skills.">
 
     <link rel="icon" href="assets/img/logopng.png">
 
@@ -23,7 +31,7 @@
 
 
     <div class="sidebar">
-      <a href="#"><img src="assets/img/logo.svg" alt="" id="logo-sidebar"></a>
+      <a href="#"><img src="assets/img/logowhite.svg" alt="" id="logo-sidebar"></a>
       <div class="nav-indicator"></div>
       <div id="nav-sidebar" class="">
         <a href="#work" style="text-decoration: none;"><div class="nav-link" id="nav-work">WORK</div></a>
@@ -37,11 +45,22 @@
 
 
     <!-- HERO SECTION -->
-    <div class="section" id="section-hero">
-      <div class="hero-content">
-        <img src="assets/img/logowhite.svg" alt="" id="logo-hero">
-        <div id="name-hero" class="">JOHANN BANTA</div>
-        <div id="subtitle-hero" class="">UI / UX Design</div>
+    <div class="section" id="section-hero" style="background-image: url('assets/img/herobg.png'); background-size: cover; height: auto;">
+
+        <div class="margin-container" style="">
+          <div class="hero-content">
+          <div class="about-grid">
+            <img src="assets/img/me.png" alt="" id="img-me" class="">
+            <div class="">
+              <div id="greeting-about" class=""> <span class="shorelinesFont" style="font-size: 90px">WASSUP!</span> I'm Johann,
+              <BR>and I love design.</div>
+              <div class="description-about" style="margin-top: 10px">
+                I am a creative  <span class="bold">U/UX Designer</span> with a strong front-end prototyping background who is constantly exploring ways to hone and apply my skills.
+              </div>
+              <div class="description-about" style="color: gray; margin-top: 20px;">Currently a UI/UX Design intern at You3Dit and finishing school at UC Berkeley</div>
+            </div>
+          </div>
+        </div>
 
       </div>
       <img src="assets/img/scroll-arrow.png" alt="" id="scroll-arrow">
@@ -106,19 +125,13 @@
     <!-- ABOUT SECTION -->
     <a name="about"><div class="section" id="section-about" style="height: auto;"></a>
       <div class="margin-container" style="padding: 100px 0;">
-        <div class="about-grid">
-          <img src="assets/img/me.png" alt="" id="img-me" class="">
-          <div class="">
-            <div id="greeting-about" class="">Hello!</div>
-            <div class="description-about">
-              I am a UI/UX designer familiarized with front-end development who is constantly exploring ways to hone my skills and apply them to real-world applications.
-            </div>
-          </div>
+        <div id="greeting-about" class="">Here's why I am a &nbsp;<span class="shorelinesFont" style="font-size: 80px">COOL DUDE:</span></div>
+        <div class="description-about" style="width:100%">
+          At first, I wanted to become a computer scientist but I couldn't get away from an itch I need to scratch - DESIGN. But how can I leverage my technical skills in the world of design? I figured it out. UI/UX Design. I went all-in and since then, it has turned into a fiery passion that hit me like a truck. I love to learn and create with a strong motivation to master my tools in order to make everything beautiful and usable.
+          <BR> <BR>
+          Other than that, I love to have fun and explore my various hobbies:
         </div>
-        <div class="description-about" style="margin-top: 40px;">
-          With a fiery passion to learn and create, I found UI/UX Design to be my obsession where I have strong motivation to master the tools I have at hand and stay up-to-date with current design trends. I am excited to graduate and kickstart my career in design.
-        </div>
-        <div style="color: gray; margin-top: 40px;">Currently a UI/UX Design intern at You3Dit and finishing school at UC Berkeley</div>
+
         <div class="about-img-grid">
           <img src="assets/img/about0.png" alt="" class="about-img about-img-outline" id="about-img-0">
           <img src="assets/img/about1.png" alt="" class="about-img about-img-outline" id="about-img-1">
@@ -146,7 +159,7 @@
 
         </div>
       </div>
-      <div id="copyright">This website was made from scratch by me. Copyright © johannbanta.com</div> 
+      <div id="copyright">This website was made from scratch by me. Copyright © johannbanta.com</div>
     </div>
 
 

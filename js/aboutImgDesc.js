@@ -5,9 +5,9 @@ $(curImgID).addClass("about-img-outline");
 // $(curImgID).css("border-color", "rgba(255,255,255,1)");
 
 var desc = [
-  "Boxing for the Cal Boxing Team",
+  "Competing for the Cal Boxing Team",
   "Me and my dog, Jaxx",
-  "I like making my own stickers!",
+  "I like making my own stickers",
   "Chillin' on a cliff at the Grand Canyon",
   "Pasta I made from scratch"
 ];

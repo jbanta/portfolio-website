@@ -1,10 +1,10 @@
 var curnav;
 var $window = $(window);
 var newsect = false;
-var navIndiPos = [$('#logo-sidebar').offset().top - $window.scrollTop() + 22,
-                  $('#nav-work').offset().top - $window.scrollTop() - 6,
-                  $('#nav-about').offset().top - $window.scrollTop() - 6,
-                  $('#nav-contact').offset().top - $window.scrollTop() - 6]
+var navIndiPos = [$('#logo-sidebar').offset().top - $window.scrollTop() + 24,
+                  $('#nav-work').offset().top - $window.scrollTop() - 4,
+                  $('#nav-about').offset().top - $window.scrollTop() - 4,
+                  $('#nav-contact').offset().top - $window.scrollTop() - 4]
 
 
 //change indicator based on scrolling
