@@ -119,6 +119,7 @@ a {
   position: relative;
   float: right;
   top: 75px;
+  display: none;
 }
 .nav-indicator-workfixed {
   width: 5px;
@@ -217,7 +218,7 @@ a {
 }
 
 .proj-title {
-  font-size: 60px;
+  font-size: 57px;
   @extend .bold;
   letter-spacing: 3px;
 }
@@ -255,6 +256,15 @@ a {
   bottom:0;
   width: 75%;
   max-width: 900px;
+}
+
+#gde-banner-img {
+  position: absolute;
+  right:82px;
+  top:52%;
+  transform: translateY(-50%);
+  width: 42%;
+  max-width: 650px;
 }
 
 #dfam-banner-img {
@@ -435,7 +445,7 @@ a {
 .cs-casestudy {
   text-align: center;
   font-size: 18px;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   @extend .bold;
   margin-top: 60px;
 }
@@ -557,12 +567,20 @@ a {
 // MD1
 @media (max-width: 1360px){
   #uicol-banner-img {
-    width: 42%;
-    right: 30px;
+    width: 45%;
+    right: 57px;
   }
   #dfam-banner-img {
-    width: 42%;
+    width: 45%;
     right: 50px;
+  }
+  #gde-banner-img {
+    right:70px;
+    width: 42%;
+    top:56%;
+  }
+  .proj-title {
+    font-size: 50px;
   }
 }
 
@@ -615,6 +633,13 @@ a {
     left: 60px;
     top: 530px;
   }
+  #gde-banner-img {
+    max-width: 600px;
+    width: 80%;
+    right: auto;
+    left: 75px;
+    top: 530px;
+  }
   #y3di-banner-img {
     width: 100%;
   }
@@ -648,6 +673,7 @@ a {
   .about-img-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
 }
 
 //MD4
@@ -749,7 +775,7 @@ a {
     margin-left: 50px;
   }
   .proj-title {
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .proj-cta {
     margin-left: 50px;
@@ -760,6 +786,10 @@ a {
   }
   #dfam-banner-img {
     left: 40px;
+    top: 490px;
+  }
+  #gde-banner-img {
+    left: 55px;
     top: 490px;
   }
   #y3di-banner-img {
