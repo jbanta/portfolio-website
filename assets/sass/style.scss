@@ -85,6 +85,7 @@ a {
   cursor: pointer;
   color: $lightgray;
   @extend .light;
+  letter-spacing: 3px;
 }
 #resume-link {
   position: absolute;
@@ -150,7 +151,7 @@ a {
  }
  #name-hero {
    position: relative;
-   color: white;
+   color: $lightgray;
    font-size: 70px;
    @extend .bold;
    text-align: center;
@@ -158,7 +159,7 @@ a {
  }
  #subtitle-hero {
    position: relative;
-   color: white;
+   color: $lightgray;
    font-size: 20px;
    @extend .bold;
    text-align: center;
@@ -218,7 +219,7 @@ a {
 }
 
 .proj-title {
-  font-size: 57px;
+  font-size: 40px;
   @extend .bold;
   letter-spacing: 3px;
 }
@@ -228,6 +229,7 @@ a {
   line-height: 25px;
   width: 60%;
   margin-left:3px;
+  margin-top: 10px;
   opacity: .8;
 }
 
@@ -309,17 +311,17 @@ a {
 
 #greeting-about {
   position: relative;
-  color: white;
-  font-size: 55px;
+  color: $lightgray;
+  font-size: 40px;
   @extend .bold;
   top: -15px;
 }
 
 .description-about {
-  color: white;
+  color: $lightgray;
   left: 5px;
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 30px;
   @extend .light;
   width: 80%;
@@ -374,7 +376,7 @@ a {
 }
 
 .email {
-  color: white;
+  color: $lightgray;
   font-size: 60px;
   @extend .bold;
   cursor: pointer;
@@ -382,7 +384,7 @@ a {
 
 #cta-contact {
   margin-top: 20px;
-  color: white;
+  color: $lightgray;
   font-size: 16px;
   line-height: 30px;
   @extend .semilight;
@@ -580,7 +582,7 @@ a {
     top:56%;
   }
   .proj-title {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
